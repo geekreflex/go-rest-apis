@@ -117,6 +117,7 @@ func SetupAndListen() {
 	router.Get("/goly/:id", getGoly)
 	router.Post("/goly", createGoly)
 	router.Patch("/goly", updateGoly)
+	router.Delete("/goly/:id", deleteGoly)
 
 	router.Listen(":3000")
 }
